@@ -5,13 +5,16 @@
   "type": "module",
   "license": "MIT",
   "description": "Image render service: a JSON spec in, N concurrent renders via gpt-image-2 on the Codex/ChatGPT subscription (pluggable backends), one JSON line of structured results out.",
+  "engines": {
+    "bun": ">=1.4.0"
+  },
   "scripts": {
     "typecheck": "tsc --noEmit",
     "test": "bun test",
     "live": "bun test/live-render.ts"
   },
   "devDependencies": {
-    "@types/bun": "^1.3.14",
+    "@types/bun": "^1.4.0",
     "@types/node": "^22.10.0",
     "typescript": "^5.7.0"
   },
